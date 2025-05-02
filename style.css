@@ -1,0 +1,408 @@
+/* All styles for the website  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    height:100vh;
+}
+
+/* for header navigation */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0.25rem 0;
+    margin: 0 1rem;
+}
+
+/* for menu and youtube logo */
+
+.menu{
+    display:flex;
+    align-items: center;
+    gap:1.25rem; 
+}
+
+.menu-icon{
+    width: 2.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.5rem; 
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+}
+
+.menu-icon:hover{
+    background-color: #f0f0f0;
+}
+
+.menu img{
+    width: 6rem;
+}
+
+/* for search bar section */
+
+.search-bar-section{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+
+/* for search bar */
+
+.search-ber{
+    display: flex; 
+    align-items: center; 
+    border-radius: 1.5rem; 
+    border: 1px #D1D5DB solid; 
+}
+
+.search-ber input{
+    width: 530px;
+    border: none; 
+    margin-left: 1.25rem;
+}
+
+.search-ber-button{
+    padding: 0.5rem 1.25rem; 
+    border-top-right-radius: 1.5rem; 
+    border-bottom-right-radius: 1.5rem; 
+    border-left-width: 1px; 
+    border: 1px #D1D5DB solid; 
+    background-color: #F9FAFB; 
+}
+
+.search-ber-button:hover{
+    background-color: #E5E7EB; 
+    cursor: pointer;
+}
+
+.search-ber-button svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* mic button */
+
+.mic-button{
+    padding: 10px;
+    border-radius: 9999px; 
+    background-color: #F3F4F6; 
+    border: none;
+}
+
+.mic-button:hover{
+    background-color: #E5E7EB; 
+    cursor: pointer;
+}
+
+.mic-button svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* for right section of header */
+
+.right-section-header{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; 
+}
+
+/* for create video */
+
+.create-video{
+    padding: 10px;
+    border-radius: 9999px; 
+    border: none;
+}
+
+.create-video:hover{
+    background-color: #E5E7EB; 
+    cursor: pointer;
+}
+
+.create-video svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* for notification bell */
+
+.notification-bell{
+    padding: 10px;
+    border-radius: 60%;
+    border:none;
+    position: relative;
+}
+
+.notification-bell:hover{
+    background-color: #E5E7EB; 
+}
+
+.notification-bell svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.notification-bell p{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    top:0.25rem;
+    right:0.5rem;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    background-color: #DC2626; 
+}
+
+/* for profile */
+
+.profile{
+    cursor: pointer;
+}
+
+.profile img{
+    width: 2rem;
+    border-radius: 60%;
+}
+
+/* for main content */
+
+.main-content{
+    display: flex;
+    align-items: start;
+    gap:2.50rem;
+    height: 90vh;
+    overflow: hidden;
+}
+
+/* left sidebar */
+.left-sidebar{
+    display: flex;
+    flex-direction: column;
+    margin: 0.25rem;
+    gap:2rem;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.25rem;
+    width: 100%;
+    padding: 0 1rem;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+}
+
+.icon:hover{
+    background-color: #F0F0F0; 
+}
+
+.icon div{
+    width: 1.5rem;
+}
+
+.icon p{
+    font-weight: 600; 
+    font-size: 0.5rem;
+}
+
+/* for videos content */
+
+.videos-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    padding-top: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+/* for videos content category options */
+
+.category-options{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+.options-1{
+    background-color: #000;
+    color: #ffffff;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.options{
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    min-width: 3rem;
+    text-align: center;
+}
+
+.options:hover{
+    background-color: #e5e5e5; 
+}
+
+/* for video section */
+
+.video-sections{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1.25rem; 
+    row-gap: 2.5rem; 
+    padding-bottom: 1.25rem;
+    align-self: flex-start; 
+}
+
+/* card for video */
+
+.card-video{
+    width: 350px;
+    cursor: pointer;
+    box-flex-group: 0;
+}
+
+/* for video thumbnail */
+
+.thumbnail{
+    position: relative;
+}
+
+.thumbnail iframe{
+    border-radius: 0.75rem; 
+}
+
+.thumbnail p{
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    padding: 0.25rem 1px;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+/* for card header details */
+
+.card-details{
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    margin-top: 0.25rem;
+}
+
+/* channel logo */
+
+.channel-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    align-self: self-start;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+}
+
+.channel-logo img{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* for card details right side */
+
+.card-details-right{
+    width: 100%;
+}
+
+.card-details-right h4{
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+    color: #4B5563; 
+}
+
+/* for video heading */
+
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h2{
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+    font-weight: 600; 
+}
+
+/* button for more options */
+
+.button-options{
+    display: none;
+}
+
+.button-options:hover{
+    display: block;
+}
+
+.button-options svg{
+    width: 1.50rem;
+    height: 1.50rem;
+}
+
+/* for card description  */
+
+.card-description{
+    display: flex; 
+    gap: 0.5rem; 
+    align-items: center; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+    color: #6B7280; 
+}
+
+/* div for dot */
+
+.dot{
+    border-radius: 50%; 
+    width: 0.25rem; 
+    height: 0.25rem; 
+    background-color: #6B7280; 
+}
